@@ -1,0 +1,6 @@
+body { background:#000428; color:#fff; font-family: Arial, sans-serif; margin:0; padding:0; display:flex; }
+.controls { width:25%; padding:20px; text-align:center; }
+select, button { margin:10px ; padding:10px; width:80%; border:none; border-radius:5px; }
+button { cursor:pointer; }
+.array-container { width:75%; display:flex; align-items:flex-end; justify-content:center; height:90vh; }
+.bar { margin:2px; background:navy; text-align:center; color:white; }

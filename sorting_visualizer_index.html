@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <h1>Sorting Visualizer</h1>
+    <select id="algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="quick">Quick Sort</option>
+    </select>
+    <select id="speed">
+      <option value="100">Fast</option>
+      <option value="300">Medium</option>
+      <option value="600">Slow</option>
+    </select>
+
+    <button id="size">Array Size</button>
+    <input type="range" id="size" min="5" max="25" value="10" oninput="updateArraySize(this.value)">
+    <span id="sizeValue">10</span>
+    
+
+    <button id="randomize">Randomize Array</button>
+    <button id="sort">Sort</button>
+  </div>
+  <div class="array-container" id="array"></div>
+  <script src="script.js"></script>
+</body>
+</html>
